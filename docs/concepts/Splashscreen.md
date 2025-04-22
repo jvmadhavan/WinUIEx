@@ -27,8 +27,7 @@ protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs ar
 {
   m_window = new MainWindow();
   m_window.Activate();
-  Window_Activated += Window_Activated;
-  
+  m_window.Activated += Window_Activated;  
 }
 
 private void Window_Activated(object sender, WindowActivatedEventArgs args)
